@@ -27,6 +27,12 @@ namespace DesignPattern.Lesson1_Builder
         {
             return person;
         }
+        public static void Demo()
+        {
+            Person p = Person.New.Called("John").Build();
+            Console.WriteLine(p);
+            Console.ReadLine();
+        }
     }
     public class PersonInfoBuilder<SELF> : PersonBuilder where SELF : PersonInfoBuilder<SELF>
     {

@@ -1,4 +1,4 @@
-﻿using DesignPattern.Lesson1_Builder;
+﻿using DesignPattern.Lesson2_Factory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +12,22 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            //HtmlBuilder.BadCode_Demo();
-            //HtmlBuilder.GoodCode_Demo();
+            #region L1 Builder
 
-            PersonJobBuilder<Person.Builder> p = Person.New.Called("John");
-            Console.WriteLine(p);
-            Console.ReadLine();
+
+            //Lesson1_Builder.HtmlBuilder.BadCode_Demo();
+            //Lesson1_Builder.HtmlBuilder.GoodCode_Demo();
+            //Lesson1_Builder.PersonBuilder.Demo();
+
+
+            #endregion
+            #region L2 Factory
+
+
+            Lesson2_Factory.ProductFactory.Demo();
+
+
+            #endregion
         }
     }
 }
