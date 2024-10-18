@@ -46,11 +46,13 @@
   <ItemGroup>
     <Compile Include="Lesson1_Builder\PersonBuilder.cs" />
     <Compile Include="Lesson1_Builder\HtmlBuilder.cs" />
+    <Compile Include="Lesson2_Factory\ProductFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
